@@ -1,0 +1,62 @@
+.nav-section{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 220px;
+    padding: 90px 30px 0 0;
+    box-sizing: border-box;
+    text-align: left;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-section h1{
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    width:220px ;
+    height: 58px;
+    font-size: 30px;
+    color: #FFFFFF;
+
+    margin-top:0;
+    text-align: center;
+    position: absolute;
+    top:0;
+    padding-top: 10px;
+}
+.nav-section img{
+    width: 220px;
+    left: 0;
+    padding-left: 0;
+    display:inline;
+    box-sizing: border-box;
+}
+.nav-section ul{
+    font-size: 15px;
+    list-style: none;
+    padding-left: 0;
+}
+.nav-section ul li{
+    border-bottom: 2px solid #e0e0e0;
+    width: 220px;
+}
+.nav-section a{
+    text-decoration: none;
+    color: #725C5C ;
+    padding-left: 24px;
+    display: block;
+    height: 33px;
+    padding-top:10px ;
+    transition: border-left 0.3s linear;
+}
+.nav-section a:hover{
+    border-left: rgba(237, 120, 57, 1) solid 5px;
+    background: #FDF1EB;
+}
+.main-content{
+    width: 65%;
+    margin-left:35%;
+    padding: 72px 36px;
+    box-sizing: border-box;
+}
+    
