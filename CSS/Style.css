@@ -19,7 +19,6 @@ body{
     height: 58px;
     font-size: 30px;
     color: #FFFFFF;
-
     margin-top:0;
     text-align: center;
     position: absolute;
@@ -139,9 +138,10 @@ body{
     color:#ED7839;
 }
 .video-div{
-    max-width: 100%;
+    width:86.5%;;
 }
 .right-div{
+    background: white;
     position: absolute;
     width: 242px;
     height: 510px;
@@ -266,7 +266,50 @@ hr{
     border: 1px solid #E7E7E7;
     width: 1160px;    
 }
+.comment-div{
+    width: 1160px;
+    height: 165px;
+    background: white;
+    margin: 25px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.ul-comment-text{
+    list-style: none;
+    line-height: 2px;
+}
+.ul-comment-text h3{
+    color: #ED7839;
+    letter-spacing: 0.5px;
+}
+.ul-comment-text h4{
+    color: #5C5C5C;
+}
+.ul-comment-text p{
 
+    line-height: normal;
+    color: #4D4D4D;
+}
+.ul-comment-icon{
+    list-style: none;
+    position: absolute;
+}
+.ul-comment-icon li{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    position: relative;
+    bottom: 20px;
+    color: #757575;
+}
+.ul-comment-icon li:nth-child(1){
+    position: relative;
+    bottom: 26.3px;
+}
+.ul-comment-icon li p{
+    position: relative;
+    bottom: 13px;
+}
 
 
     
