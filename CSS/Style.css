@@ -69,7 +69,11 @@ body{
     line-height: 0;
 }
 .hero select{
-    background: transparent;
+    background-image: url(../Images/Icones/Linguagem.png);
+    background-size:30px ;
+    background-repeat: no-repeat;
+    background-color: rgba(253, 241, 235, 0);
+    padding-left: 27px;
     width: 97px;
     height: 34px;
     border-color: #CCCCCC;
@@ -103,11 +107,13 @@ body{
 .section-first{
     width:99.5%;
 }
+.sub-header{
+}
 .sub-header ul{
     list-style: none;
     text-align: right;
     position: absolute;
-    right: 70px;
+    right: 0px;
     top: 90px;
 }
 .sub-header ul li{
@@ -138,7 +144,7 @@ body{
     color:#ED7839;
 }
 .video-div{
-    width:86.5%;;
+    width:86.5%;
 }
 .right-div{
     background: white;
@@ -154,7 +160,7 @@ body{
 .right-div ul, .right-div ol{
     list-style: none;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 11px;
 }
 .ol-right-div{
     font-size: 13.5px;
@@ -202,12 +208,13 @@ body{
     width: 84%;
     padding-left: 16%;
 }
-.hidden-2, .hidden-3, .hidden-3-1{
+.hidden-1,.hidden-2{
     display: none;
 }
 .section-third{
     margin-top: 40px;
-    height:921px;
+    min-height:921px;
+    height: auto;
     width: 1210px;
     border-radius: 3px;
     border: #ECECEC 2px solid;
@@ -215,16 +222,14 @@ body{
 }
 .section-third h2{
     background: #FDF1EB;
-    margin-top: 0;
+    margin-top:0;
     padding-top: 20px;
     border-bottom: 2px solid #ECECEC;
+
 }
 
-/*asdasd*/
+/*---Discussão-1---*/
 
-.hidden-comment{
-    display: none;
-}
 .hidden-1{
     text-align: center;
 }
@@ -261,6 +266,118 @@ body{
     width: 20px;
 }
 
+/*Discussão-2*/
+
+.hidden-2{
+    padding:0 20px 95px 20px;
+}
+.hidden-2 p{
+    text-align: center;
+}
+.hidden-2 h3{
+    color: #ED7839;
+    display: block;
+    
+}
+.hidden-2 input[type="text"]{
+    width: 1160px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+}
+.textarea-format textarea{
+    width: 1160px;
+    height: 100px;
+    resize: none;
+    position: absolute;
+    border: 1px solid #CCCCCC;
+}
+.textarea-format ul{
+    list-style: none;
+    border: 1px solid #CCCCCC;
+    background: #EAF1F2;
+    position: relative;
+    top: 105px;
+    width: 1124px;
+    height: 40px;
+}
+.textarea-format ul li{
+    display: inline;
+    padding-right: 20px;
+}
+.textarea-format img{
+    padding-top: 15px;
+    padding-right: 20px;
+}
+.textarea-format button{
+    position: absolute;
+    padding: 9px 100px;
+    right: 0;
+    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+    border-radius: 0px 0px 4px 0px;
+    border: transparent;
+    color: white;
+    font-size: 20px;
+
+}
+
+/*Discussão-3*/
+
+.hidden-3{
+    text-align: center;
+}
+.hidden-3 h3{
+    color: #ED7839;
+}
+.hidden-3 p{
+    color: #595959;
+}
+.hidden-3 a{
+    color: #F48F44;
+}
+.hidden-3 button{
+    background: linear-gradient(rgba(254, 178, 84, 1), rgba(240, 129, 61, 1));
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    width: 250px;
+    height: 32px;
+    color: white;
+    font-size: 17px;
+}
+.hidden-3-1{
+    position: relative;
+}
+.dis-comment-div{
+    width: 1160px;
+    height: 165px;
+    background: white;
+    margin: 25px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    position: relative;
+}
+.dis-comment-div ::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 245, 245, .25);
+}
+
+.front-comment-div{
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    z-index: 10;
+}
+.front-comment-div a{
+    color: #ED7839;
+}
+
 hr{
     background: #e7e7e7;
     border: 1px solid #E7E7E7;
@@ -268,9 +385,12 @@ hr{
 }
 .comment-div{
     width: 1160px;
-    height: 165px;
+    min-height: 165px;
+    height: auto;
     background: white;
+    border: 1px solid #E7E7E7;
     margin: 25px;
+    padding-bottom:10px;
     padding-top: 10px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -310,6 +430,22 @@ hr{
     position: relative;
     bottom: 13px;
 }
-
-
+.hidden-comment{
+    background: #F8F8F8;
+    width: 1160px;
+    height: 130px;
+    border: 1px solid #E7E7E7;
+    padding-top: 10px;
+    position: relative;
+    top: 40px;
+}
+.comment-div div:nth-child(3){
+    background: white;
+}
+.comment-div div:nth-child(4){
+    height: 190px;
+}
+.comment-div div:nth-child(5){
+    margin-bottom: 30px;
     
+}
