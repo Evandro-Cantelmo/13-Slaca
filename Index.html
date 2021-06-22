@@ -8,13 +8,16 @@
         <meta name="Keywords" content="HTML, CSS, Chuva, Chuva.inc, Galoá">
         <link rel="stylesheet" href="CSS/Style.css">
 
+        <script src="javascript/Scripts.js" defer></script>
     </head>
     <body>
+        <!-- Cabeçalho -->
         <header class="hero">
             <select>
                 <option value="PT, BR">PT, BR</option>
                 <option value="EN, US">EN, US</option>
             </select>
+            <!-- login -->
             <div class="header-login">
                 <ul class="hero-ul-login">
                     <li><h5>Bem vindo!</h5></li>
@@ -22,6 +25,7 @@
                 </ul>
                 <img src="Images/Avatar.jpg" alt="Mulher sorrindo">
             </div>
+            <!-- Titulo principal -->
             <ul class="hero-ul">
                 <li><p>Anais do Simpósio Latino Americano de Ciências de Alimentos </p></li>
                 <li><h2>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h2></li>
@@ -29,7 +33,7 @@
             </ul>
 
         </header>
-
+        <!-- barra de navegação -->
         <section class="nav-section">
             <h1>SLACA 2019</h1>
             <img src="Images/Logo.png" alt="Logo 13 Slaca">
@@ -42,9 +46,11 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </section>
-
+        <!-- conteúdo principal -->
         <main class="main-content">
+            <!-- primeira seção -->
             <section class="main-content-section-first">
+                <!-- abaixo do titulo -->
                 <div class="sub-header">
                     <h3>Análise sensorial de preparações funcionais desenvolvidas para escolares 
                         entre 09 e 15 anos, do município de Campinas/SP
@@ -56,8 +62,10 @@
                     </ul>
                     <p>COMO CITAR ESSE TRABALHOS?</p>
                 </div>
+                <!-- Detalhes -->
                 <div class="right-div">
                     <h2><b>Detalhes</b></h2>
+                    
                     <ul>
                         <li>Tipo de Apresentação: <b>Pôster</b></li>
                         <li>Eixo temático: <b>Alimentação e saúde (AS)</b></li>
@@ -81,6 +89,7 @@
                     </ol>
                     <br><br><br><br><br>
                 </div>
+                <!-- Video -->
                 <div class="layout-video">
                     <div class="front-video-title">
                         <h2>Análise sensorial de preparações 
@@ -99,9 +108,10 @@
                     </div>
                 </div>
 
-
             </section>
+            <!-- Segunda seção -->
             <section class="main-content-section">
+                <!-- Resumo -->
                 <article class="article-seemore">
                     <h2>Resumo</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -110,7 +120,7 @@
                     Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, 
                     vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra 
                     lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. 
-                    Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, eros vestibulum<span id="pontos">... <a href="#">Ver mais</a> </span><span id="mais"><br><br>
+                    Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, eros vestibulum<span id="pontos">... </span><span id="mais"><br><br>
                     Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. 
                     Proin dapibus consequat feugiat. Proin dictum justo arcu, 
                     quis vestibulum augue lacinia quis. Sed dignissim dui nulla, 
@@ -129,13 +139,18 @@
                     Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. 
                     Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. 
                     Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><button onclick="leiaMais()" id="btnLeiaMais">Ver mais</button> </p>
+                    
+                    
                 </article>
+
             </section>
+            <!-- Terceira seção-->
             <section class="main-content-section">
+                <!-- Discussões -->
                 <article class="section-third">
                     <h2>Discussões</h2>
-                    <div class="hidden-1">
+                    <div id="ma" class="hidden-1">
                         <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
                         <ul>
                             <li><img src="Images/Icones/Icone1.png" alt=""></li>
@@ -143,10 +158,10 @@
                             <li><img src="Images/Icones/Icone3.png" alt=""></li>
                         </ul>
                         <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-                        <button><img src="Images/Icones/Criar.png" alt=""> criar tópico</button>
+                        <button onclick="mostra()"><img src="Images/Icones/Criar.png" alt=""> criar tópico</button>
                     </div>
-                    <div class="hidden-2">
-                        <form action="Index.html" method="POST">
+                    <div id="mb" class="hidden-2">
+                        <form action=" " method="dialog">
                             <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                             <h3>Assunto</h3>
                             <input type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
@@ -156,19 +171,19 @@
                                 <ul>
                                     <li><img src="Images/Icones/Bold.png" width="18px"></li>
                                     <li><img src="Images/Icones/Italic.png" width="20px"></li>
-                                    <li><button>Enviar</button></li>
+                                    <li><button onclick="mostra_2()" type="submit">Enviar</button></li>
                                 </ul>
                             </div>
                         </form>
                     </div>
-                    <div class="hidden-3">
+                    <div id="mc" class="hidden-3">
                         <h3>Seu tópico foi enviado com sucesso! :D</h3>
                         <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
                         <p><a href="#">Descubra outros trabalhos!</a></p>
-                        <button>criar novo tópico</button>
+                        <button onclick="mostra_3()">criar novo tópico</button>
                     </div>
                     <hr>
-                    <div class="hidden-3-1">
+                    <div id="mca"class="hidden-3-1">
                         <div class="front-comment-div">
                             <img src="Images/Icones/Aguardando.png" alt="Icone de aguardando verificação" width="30px">
                             <h3>Aguardando feedback dos autores</h3>
@@ -196,7 +211,6 @@
                         </ul>
                     </div>
                     <div class="comment-div">
-                        <a href="#">
                             <ul class="ul-comment-text">
                                 <li><h3>Assunto da pergunta aparece aqui</h3></li>
                                 <li><h4>Carlos Henrique Santos</h4></li>
@@ -205,55 +219,54 @@
                             <ul class="ul-comment-icon">
                                 <li><img src="Images/Icones/Mais-info.png" alt="" width="5px"></li>
                                 <li><img src="Images/Icones/Favoritar.png" alt="" width="40px"></li>
-                                <li><p>1 like</p></li>
-                                <li><p>1 resposta</p></li>
+                                <li><button onclick="mostra_comentario()" id="btn-icon">1 like</button></li>
+                                <li><button onclick="mostra_comentario()" id="btn-icon-2">1 resposta</button></li>
                             </ul>
-                        </a>
-                        <div class="hidden-comment">
-                            <ul class="ul-comment-text">
-                                <li><h4>Adriano da Silva</h4></li>
-                                <li><p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado
-                                    impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo
-                                    formativo situado impacto de processo formativo processo.
-                                </p></li>
-                            </ul>
-                        </div>
-                        <div class="hidden-comment">
-                            <ul class="ul-comment-text">
-                                <li><h4>Carlos Henrique Santos</h4></li>
-                                <li><p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
-                                    <br><br>
-                                    Obrigada pela resposta, muito interessante o seu trabalho! </p></li>
-                            </ul>
-                            
-                            
-                        </div>
-                        <div class="hidden-comment">
-                            <ul class="ul-comment-text">
-                                <li><h4>Carmila Ferreira Andrade</h4></li>
-                                <li><p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo
-                                    resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-                                    <br><br>
-                                    Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo 
-                                    situado impacto de processo formativo processo.
-                                </p></li>
-                            </ul>
-                        </div>
-                        <div class="hidden-comment">
-                            <ul class="ul-comment-text">
-                                <li><h4>Ana Carolina</h4></li>
-                                <li><p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo 
-                                    situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da 
-                                    dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-                                </p></li>
-                            </ul>
+                        <div id='comentario'>
+                            <div class="hidden-comment">
+                                <ul class="ul-comment-text">
+                                    <li><h4>Adriano da Silva</h4></li>
+                                    <li><p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado
+                                        impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo
+                                        formativo situado impacto de processo formativo processo.
+                                    </p></li>
+                                </ul>
+                            </div>
+                            <div class="hidden-comment">
+                                <ul class="ul-comment-text">
+                                    <li><h4>Carlos Henrique Santos</h4></li>
+                                    <li><p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+                                        <br><br>
+                                        Obrigada pela resposta, muito interessante o seu trabalho! </p></li>
+                                </ul>
+                            </div>
+                            <div class="hidden-comment">
+                                <ul class="ul-comment-text">
+                                    <li><h4>Carmila Ferreira Andrade</h4></li>
+                                    <li><p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo
+                                        resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                        <br><br>
+                                        Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo 
+                                        situado impacto de processo formativo processo.
+                                    </p></li>
+                                </ul>
+                            </div>
+                            <div class="hidden-comment">
+                                <ul class="ul-comment-text">
+                                    <li><h4>Ana Carolina</h4></li>
+                                    <li><p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo 
+                                        situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da 
+                                        dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                    </p></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </article>
             </section>
         </main>
         <footer class="footer-copy">
-
+            <img src="Images/Imagem-footer.png" width="100%">
         </footer>
     </body>
 </html>

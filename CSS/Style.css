@@ -1,6 +1,8 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/*---barra de navegação---*/
 .nav-section{
     position: fixed;
     top:0;
@@ -56,7 +58,7 @@ body{
     border-left: rgba(237, 120, 57, 1) solid 5px;
     background: #FDF1EB;
 }
-
+/*---Titulo---*/
 .hero{
     background: #FDF1EB;
     width: 99.385%;
@@ -75,11 +77,6 @@ body{
 
 }
 
-.hero-ul-login{
-    list-style: none;
-    line-height: 0;
-
-}
 
 .hero select{
     background-image: url(../Images/Icones/Linguagem.png);
@@ -95,6 +92,7 @@ body{
     margin-top: 1%;
     position: absolute;
 }
+/*---login---*/
 .header-login{
     text-align: right;
     padding-top: 0;
@@ -109,6 +107,12 @@ body{
     border-radius: 50%;
     top:12px;
 }
+.hero-ul-login{
+    list-style: none;
+    line-height: 0;
+
+}
+/*---conteúdo principal*/
 .main-content{
     width: 85.5%;
     margin-left: 14.5%;
@@ -118,6 +122,7 @@ body{
 .main-content-section-first{
     padding: relative;
 }
+/*---abaixo do titulo*/
 .sub-header{
     padding-right:400px;
 }
@@ -155,8 +160,10 @@ body{
     font-size: 24px;
     color:#ED7839;
 }
+/*---Video---*/
 .layout-video{
     position: relative;
+    float: left;
 }
 .front-video-title{
     position: absolute;
@@ -197,31 +204,31 @@ body{
     height:auto;
 }
 .video-div-img{
-    width:79%;
+    width:100%;
 }
-
 
 .video-div a:after{
     content: " ";
     position: absolute;
     top: 0;
     left: 0;
-    width: 79%;
+    width: 100%;
     height: 99%;
     background: rgba(141, 53, 6, 0.5);
 }
+/*---Detalhes---*/
 .right-div{
     background: white;
     float: right;
     width: 20%;
-    max-height: 540px;
+    min-height: 540px;
     height: auto;
     top: 190px;
     right: 50px;
     font-size: 15.3px;
     border: 2px solid #ECECEC;
     border-radius: 3px 3px 0px 0px;
-    overflow: hidden;
+    overflow: auto;
 
 }
 .right-div ul, .right-div ol{
@@ -247,7 +254,7 @@ body{
     border-bottom: 2px solid #ECECEC;
 }
 
-
+/*---Resumo---*/
 .article-seemore{
     margin-top: 40px;
     height: auto;
@@ -272,12 +279,21 @@ body{
 #mais{
     display: none;
 }
-.hidden-2,.hidden-3,.hidden-3-1{
-    display: none;
+#btnLeiaMais{
+    border: none;
+    background: transparent;
+    color:#ED7839;
+    font-size: 14px;
 }
+#btnLeiaMais:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*---Discussão*/
 .section-third{
     margin-top: 40px;
-    min-height:921px;
+
     height: auto;
     width: 100%;
     border-radius: 3px;
@@ -294,6 +310,7 @@ body{
 /*---Discussão-1---*/
 
 .hidden-1{
+    display: block;
     text-align: center;
 }
 .hidden-1 h3{
@@ -323,6 +340,7 @@ body{
     height: 32px;
     color: white;
     font-size: 17px;
+    cursor: pointer;
 
 }
 .hidden-1 button img{
@@ -332,6 +350,7 @@ body{
 /*Discussão-2*/
 
 .hidden-2{
+    display: none;
     padding:0 20px;
     width: 95.5%;
 }
@@ -394,12 +413,14 @@ body{
     border: transparent;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 
 }
 
 /*Discussão-3*/
 
 .hidden-3{
+    display: none;
     text-align: center;
 }
 .hidden-3 h3{
@@ -420,8 +441,10 @@ body{
     height: 32px;
     color: white;
     font-size: 17px;
+    cursor: pointer;
 }
 .hidden-3-1{
+    display: none;
     position: relative;
 }
 .dis-comment-div{
@@ -461,9 +484,10 @@ hr{
     border: 1px solid #E7E7E7;
     width: 95%;    
 }
+/*---comentários---*/
 .comment-div{
     width: 95%;
-    min-height: 165px;
+    min-height: 190px;
     height: auto;
     background: white;
     border: 1px solid #E7E7E7;
@@ -472,6 +496,8 @@ hr{
     padding-top: 10px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    position: relative;
+    overflow: auto;
 }
 .ul-comment-text{
     list-style: none;
@@ -508,22 +534,70 @@ hr{
     position: relative;
     bottom: 13px;
 }
+.ul-comment-icon button{
+    position: relative;
+    bottom: 13px;
+    border: none;
+    background: transparent;
+    color: #757575;
+    font-size:15px ;
+}
+/*---comentários escondidos---*/
+#comentario{
+    display: none;
+}
 .hidden-comment{
     background: #F8F8F8;
     width: 100%;
-    height: 130px;
+    min-height: 130px;
+    height: auto;
     border: 1px solid #E7E7E7;
     padding-top: 10px;
     position: relative;
     top: 40px;
+    overflow: auto;
 }
-.comment-div div:nth-child(3){
+
+.comment-div div:nth-child(2){
     background: white;
 }
-.comment-div div:nth-child(4){
-    height: 190px;
+.comment-div div:nth-child(3){
+    height: auto;
 }
-.comment-div div:nth-child(5){
+.comment-div div:nth-child(4){
     margin-bottom: 30px;
     
+}
+.footer-copy{
+    width: 85.5%;
+    margin-left: 15.5%;
+    padding: 0 32px ;
+    box-sizing: border-box;
+}
+@media (max-width:1450px){
+    .right-div{
+        width: 100%;
+    }
+}
+@media (max-width:1375px){
+    .sub-header{
+        width: 50%;
+        margin-top: 90px;
+    }
+    .sub-header ul, .sub-header p{
+        margin-top: 100px;
+    }
+    .header-login ul{
+
+    }
+    .hero select{
+        top: 50px;
+        right: 50px;
+    }
+    .hero{
+        padding-bottom;
+    }
+    .hero-ul{
+        line-height: normal;
+    }
 }
