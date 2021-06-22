@@ -175,21 +175,21 @@ body{
 }
 .front-video-profile{
     
-    padding-right: 60%;
+    padding-right: 80%;
     padding-left: 2%;
     position: absolute;
     z-index: 10;
 }
 .front-video-profile img{
     position: absolute;
-    margin-top: 38% ;
+    margin-top: 40% ;
     border: 1px solid orange;
     border-radius: 100%;
 }
 .front-video-profile ul{
     list-style: none;
     position: absolute;
-    margin-top: 40%;
+    margin-top: 42%;
     left: 150px;
     color: white;
     line-height: 10px;
