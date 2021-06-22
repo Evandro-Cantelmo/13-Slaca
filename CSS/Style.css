@@ -587,15 +587,10 @@ hr{
     .sub-header ul, .sub-header p{
         margin-top: 100px;
     }
-    .header-login ul{
 
-    }
     .hero select{
         top: 50px;
         right: 50px;
-    }
-    .hero{
-        padding-bottom;
     }
     .hero-ul{
         line-height: normal;
