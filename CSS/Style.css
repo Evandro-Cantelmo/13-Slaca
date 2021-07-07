@@ -1,9 +1,16 @@
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@font-face{
+    font-family: "Roboto";
+    src: url(../Font/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: "Quicksand";
+    src: url(../Font/Quicksand-VariableFont_wght.ttf);
 }
 
 /*---barra de navegação---*/
 .nav-section{
+    font-family: Quicksand;
+    font-weight: bold;
     position: fixed;
     top:0;
     left:0;
@@ -74,6 +81,7 @@ body{
     line-height: 0;
     padding-left: 16%;
     padding-right: 30%;
+    font-family: Roboto;
 
 }
 
@@ -91,6 +99,7 @@ body{
     margin-left: 70%;
     margin-top: 1%;
     position: absolute;
+    font-family: Quicksand;
 }
 /*---login---*/
 .header-login{
@@ -100,6 +109,7 @@ body{
     right: 100px;
     top: 0;
     position: absolute;
+    font-family: Quicksand;
 }
 .header-login img{
     width: 48px;
@@ -125,6 +135,7 @@ body{
 /*---abaixo do titulo*/
 .sub-header{
     padding-right:400px;
+    font-family: Roboto;
 }
 .sub-header ul{
     list-style: none;
@@ -158,12 +169,12 @@ body{
 }
 .sub-header h3{
     font-size: 24px;
+    
     color:#ED7839;
 }
 /*---Video---*/
 .layout-video{
     position: relative;
-    float: left;
 }
 .front-video-title{
     position: absolute;
@@ -172,6 +183,7 @@ body{
     color: white;
     top: 0;
     z-index: 10;
+    font-family: Roboto;
 }
 .front-video-profile{
     
@@ -179,18 +191,20 @@ body{
     padding-left: 2%;
     position: absolute;
     z-index: 10;
+    font-family: Roboto;
 }
 .front-video-profile img{
     position: absolute;
-    margin-top: 40% ;
+    margin-top: 35% ;
     border: 1px solid orange;
     border-radius: 100%;
+    width: 10%;
 }
 .front-video-profile ul{
     list-style: none;
     position: absolute;
-    margin-top: 42%;
-    left: 150px;
+    margin-top: 35%;
+    left: 10%;
     color: white;
     line-height: 20px;
 
@@ -204,7 +218,7 @@ body{
     height:auto;
 }
 .video-div-img{
-    width:100%;
+    width:75%;
 }
 
 .video-div a:after{
@@ -212,24 +226,22 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 75%;
     height: 99%;
     background: rgba(141, 53, 6, 0.5);
 }
 /*---Detalhes---*/
 .right-div{
     background: white;
-    float: right;
     width: 20%;
-    min-height: 540px;
-    height: auto;
-    top: 190px;
-    right: 50px;
+    height: 99%;
+    top: 0px;
+    right: 0px;
     font-size: 15.3px;
     border: 2px solid #ECECEC;
     border-radius: 3px 3px 0px 0px;
-    overflow: auto;
-
+    position: absolute;
+    font-family: Quicksand;
 }
 .right-div ul, .right-div ol{
     list-style: none;
@@ -252,6 +264,11 @@ body{
     background:#FDF1EB;
     border-radius: 3px 3px 0px 0px;
     border-bottom: 2px solid #ECECEC;
+    font-family: Roboto;
+}
+.gf{
+    position: relative;
+    height: auto;
 }
 
 /*---Resumo---*/
@@ -263,18 +280,25 @@ body{
     border-radius: 3px;
     border: #ECECEC 2px solid;
     transition: height 0.2s linear;
+    font-family: Quicksand;
 }
 .article-seemore h2{
     background: #FDF1EB;
     margin-top: 0;
     padding-top: 20px;
     border-bottom: 2px solid #ECECEC;
+    font-family: Roboto;
+    padding-left: 10px;
+}
+.article-seemore p{
+    padding-left: 14px;
 }
 .article-seemore a{
     color: #ED7839;
     text-decoration: none;
     height: 380px;
     transition: height 1s linear;
+
 }
 #mais{
     display: none;
@@ -284,6 +308,7 @@ body{
     background: transparent;
     color:#ED7839;
     font-size: 14px;
+    font-family: Quicksand;
 }
 #btnLeiaMais:hover{
     text-decoration: underline;
@@ -293,7 +318,6 @@ body{
 /*---Discussão*/
 .section-third{
     margin-top: 40px;
-
     height: auto;
     width: 100%;
     border-radius: 3px;
@@ -304,6 +328,8 @@ body{
     margin-top:0;
     padding-top: 20px;
     border-bottom: 2px solid #ECECEC;
+    font-family: Roboto;
+    padding-left: 10px;
 
 }
 
@@ -312,9 +338,11 @@ body{
 .hidden-1{
     display: block;
     text-align: center;
+    font-family: Quicksand;
 }
 .hidden-1 h3{
     color: #ED7839;
+    font-family: Roboto;
 }
 .hidden-1 img{
     width: 70px;
@@ -356,14 +384,17 @@ body{
 }
 .hidden-2 p{
     text-align: center;
+    font-family: Quicksand;
 }
 .hidden-2 h3{
     color: #ED7839;
     display: block;
+    font-family: Roboto;
+    font-weight: bold;
     
 }
 .hidden-2 input[type="text"]{
-    width: 100%;
+    width: 99.5%;
     height: 40px;
     border: 1px solid #CCCCCC;
 }
@@ -375,22 +406,16 @@ body{
     max-width: 100%;
     width: auto;
     height: 40px;
+    margin-top: 15px;
     bottom: 20px;
 }
-.hidden-2 textarea{
-    list-style: none;
-    border: 1px solid #CCCCCC;
-    background: #FFFFFF;
-    width: 100%;
-    height: 100px;
-    position: relative;
-}
+
 .textarea-format{
     width: 100%;
 
 }
 .textarea-format textarea{
-    width: 100%;
+    width: 99.5%;
     height: 100px;
     resize: none;
     position: relative;
@@ -414,6 +439,8 @@ body{
     color: white;
     font-size: 20px;
     cursor: pointer;
+    font-family: Quicksand;
+    font-weight: bold;
 
 }
 
@@ -425,12 +452,15 @@ body{
 }
 .hidden-3 h3{
     color: #ED7839;
+    font-family: Roboto;
 }
 .hidden-3 p{
     color: #595959;
+    font-family: Quicksand;
 }
 .hidden-3 a{
     color: #F48F44;
+    font-family: Quicksand;
 }
 .hidden-3 button{
     background: linear-gradient(rgba(254, 178, 84, 1), rgba(240, 129, 61, 1));
@@ -441,11 +471,17 @@ body{
     height: 32px;
     color: white;
     font-size: 17px;
+    font-family: Quicksand;
+    font-weight: bold;
     cursor: pointer;
 }
 .hidden-3-1{
     display: none;
     position: relative;
+    font-family: Quicksand;
+}
+.hidden-3-1 a{
+    font-family: 'Segoe UI';
 }
 .dis-comment-div{
     width: 95%;
@@ -497,7 +533,10 @@ hr{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     position: relative;
-    overflow: auto;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-family: Quicksand;
 }
 .ul-comment-text{
     list-style: none;
@@ -518,6 +557,7 @@ hr{
 .ul-comment-icon{
     list-style: none;
     position: absolute;
+    font-family: 'Segoe UI';
 }
 .ul-comment-icon li{
     display: inline-block;
@@ -555,7 +595,7 @@ hr{
     padding-top: 10px;
     position: relative;
     top: 40px;
-    overflow: auto;
+    box-sizing: border-box;
 }
 
 .comment-div div:nth-child(2){
@@ -574,12 +614,9 @@ hr{
     padding: 0 32px ;
     box-sizing: border-box;
 }
-@media (max-width:1450px){
-    .right-div{
-        width: 100%;
-    }
-}
-@media (max-width:1375px){
+
+@media (max-width: 980px){
+    
     .sub-header{
         width: 50%;
         margin-top: 90px;
@@ -590,9 +627,17 @@ hr{
 
     .hero select{
         top: 50px;
-        right: 50px;
+        right: 100px;
     }
     .hero-ul{
         line-height: normal;
+    }
+    .right-div{
+        height: 99%;
+        overflow: auto;
+    }
+    .comment-div{
+        font-size: 10px;
+        overflow: hidden;
     }
 }
